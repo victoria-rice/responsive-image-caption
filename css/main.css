@@ -18,26 +18,28 @@ html {
 }
 body {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .bulk {
   margin: 0;
+
 }
 
-img {
+.img-flex {
   width: 100%;
   height: 100%;
   margin-bottom: -.3em;
-  position: relative;
 }
 
 h2 {
   font-family: "Denk One", sans-serif;
+  margin-top: 0;
 }
 
 p {
   font-family: 'Georgia';
+  margin-bottom: 0;
 }
 
 .type {
@@ -50,25 +52,39 @@ p {
 
 @media only screen and (min-width: 38em) {
 
+.bulk {
+  position: relative;
+}
 
 
 .type {
 
+  background-color: rgba(0, 0, 0, .3);
   position: absolute;
+  bottom: 1em;
+  right: 1em;
   width: 57%;
   color: #fff;
   border-radius: 1em;
+  font-size: 110%/1.4;
 
+}
 }
 
 @media only screen and (min-width: 60em) {
 
-
-
+.type {
+    font-size: 120%/1.5;
+}
 }
 
 @media only screen and (min-width: 90em) {
 
-  
+.type {
+  font-size: 130%/1.5;
+}
 
+.bulk {
+  overflow: hidden;
+}
 }
