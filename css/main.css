@@ -1,7 +1,42 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
 html {
   box-sizing: border-box;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
+}
+body {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.bulk {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  margin-bottom: -1em;
+}
+
+h2 {
+  font-family: 'Denk One', sans-serif;
+}
+
+p {
+  font-family: 'Georgia';
+}
+
+.type {
+  background-color: #e2e2e2;
+  display: inline-block;
+  padding: 2rem;
+  float: left;
+  width: 100%;
 }
