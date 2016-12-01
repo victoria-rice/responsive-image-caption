@@ -10,15 +10,16 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  font: normal 100%/1.3;
+  font: normal 100%/1.3 Georgia, serif;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
 }
+
 body {
   margin: 0;
-  font-size: 1rem;
+
 }
 
 .bulk {
@@ -30,16 +31,18 @@ body {
   width: 100%;
   height: 100%;
   margin-bottom: -.3em;
+  display: block;
 }
 
 h2 {
   font-family: "Denk One", sans-serif;
   margin-top: 0;
+  font-size: 1.5rem;
 }
 
 p {
-  font-family: 'Georgia';
   margin-bottom: 0;
+
 }
 
 .type {
@@ -52,39 +55,43 @@ p {
 
 @media only screen and (min-width: 38em) {
 
-.bulk {
-  position: relative;
-}
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
 
+  .bulk {
+    position: relative;
+  }
 
-.type {
+  .type {
 
-  background-color: rgba(0, 0, 0, .3);
-  position: absolute;
-  bottom: 1em;
-  right: 1em;
-  width: 57%;
-  color: #fff;
-  border-radius: 1em;
-  font-size: 110%/1.4;
-
-}
+    background-color: rgba(0, 0, 0, .3);
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    width: 57%;
+    color: #fff;
+    border-radius: 1em;
+  }
 }
 
 @media only screen and (min-width: 60em) {
 
-.type {
-    font-size: 120%/1.5;
-}
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
 }
 
 @media only screen and (min-width: 90em) {
 
-.type {
-  font-size: 130%/1.5;
-}
+  html {
+    font-size: 130%;
+    line-height: 1.5;
+  }
 
-.bulk {
-  overflow: hidden;
-}
+  .bulk {
+    overflow: hidden;
+  }
 }
